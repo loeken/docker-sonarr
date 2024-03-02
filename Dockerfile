@@ -1,2 +1,2 @@
-FROM hotio/sonarr:VERSION
+FROM hotio/sonarr:release-VERSION
 RUN apk upgrade
