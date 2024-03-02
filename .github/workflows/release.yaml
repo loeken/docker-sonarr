@@ -13,7 +13,7 @@ jobs:
       - name: Get version number
         run: |
           ls -la
-          VERSION=$(cat docker-jellyseerr/version.yaml | grep 'version' | cut -d ' ' -f4)
+          VERSION=$(cat version.yaml | grep 'version' | cut -d ' ' -f4)
           echo "VERSION=$VERSION" >> $GITHUB_ENV
       - name: Use version number in next step
         run: |
