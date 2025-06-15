@@ -10,16 +10,6 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@master
-      - name: Get version number
-        run: |
-          ls -la
-          VERSION=$(cat version.yaml | grep 'version' | cut -d ' ' -f4)
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-      - name: Use version number in next step
-        run: |
-          echo $VERSION 
-      - name: replace version in Dockerfiel
-        run: sed -i 's/VERSION/${{ env.VERSION }}/g' Dockerfile 
       - name: Login to Docker Hub
         uses: docker/login-action@465a07811f14bebb1938fbed4728c6a1ff8901fc # v2
         with:
@@ -29,6 +19,6 @@ jobs:
         uses: docker/build-push-action@1104d471370f9806843c095c1db02b5a90c5f8b6 # v3
         with:
           push: true
-          tags: loeken/sonarr:${{ env.VERSION }}
+          tags: loeken/sonarr:4.0.13
           context: .
           no-cache: true
