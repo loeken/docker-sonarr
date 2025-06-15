@@ -1,2 +1,2 @@
-FROM linuxserver/sonarr:4.0.13
+FROM linuxserver/sonarr:4.0.13@sha256:b666479159c0ffc17d5c2281737c9a88d78afcaa0aa52cb441b46336f6feba31
 RUN apk upgrade
