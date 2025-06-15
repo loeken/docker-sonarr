@@ -13,7 +13,7 @@
     {
       "fileMatch": [".github/workflows/release.yaml"],
       "matchStrings": [
-        "loeken/sonarr:(?<currentValue>\\d+\\.\\d+\\.\\d+-nightly)"
+        "loeken/sonarr:(?<currentValue>\\d+\\.\\d+\\.\\d+)"
       ],
       "datasourceTemplate": "docker",
       "packageNameTemplate": "linuxserver/sonarr",
