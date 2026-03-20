@@ -19,6 +19,6 @@ jobs:
         uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6
         with:
           push: true
-          tags: loeken/sonarr:4.0.16
+          tags: loeken/sonarr:4.0.17
           context: .
           no-cache: true
