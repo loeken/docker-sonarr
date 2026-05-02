@@ -1,2 +1,2 @@
-FROM linuxserver/sonarr:4.0.17@sha256:3580aec3802c915f0f819a88d5099abce61734b925732b8393d176b5dc561020
+FROM linuxserver/sonarr:4.0.17@sha256:bed3afb5d46fde809290997760f2e19d41e57d1eb34f507c485d5a8979c7cd8d
 RUN apk upgrade
